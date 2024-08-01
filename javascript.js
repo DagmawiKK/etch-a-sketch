@@ -1,6 +1,10 @@
 let gridButton = document.querySelector("button");
 let gridSize = 16
-
+let input = document.querySelector("input");
+let color = "black";
+input.addEventListener('input', (event) => {
+    color = event.target.value;
+});
 function updateGrid() {
     container.innerHTML = "";
 
@@ -11,7 +15,7 @@ function updateGrid() {
     let innerDivs = document.querySelectorAll(".innerDiv");
     innerDivs.forEach(innerDiv => {
         innerDiv.addEventListener('mouseenter', function () {
-            innerDiv.style.backgroundColor = "black";
+            innerDiv.style.backgroundColor = color;
         });
     });
 }
@@ -56,6 +60,6 @@ appendMultipleColumns(gridSize);
 let innerDivs = document.querySelectorAll(".innerDiv");
 innerDivs.forEach(innerDiv => {
     innerDiv.addEventListener('mouseover', function (event) {
-        innerDiv.style.backgroundColor = "black";
+        innerDiv.style.backgroundColor = color;
     });
 });

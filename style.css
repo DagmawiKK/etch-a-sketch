@@ -11,9 +11,23 @@ body {
 
 button {
     height: 30px;
-    
+    width: 200px;
+    align-self: center;
+
+}
+label {
+    display: flex;
+    gap: 5px;
+    padding-top: 10px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
 }
 
+input, label {
+    align-self: center;
+}
 .container {
     display: flex;
     background-color: red;
