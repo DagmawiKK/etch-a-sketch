@@ -81,5 +81,5 @@ label {
 
 .innerDiv {
     flex: 1;
-    border: 1px lightgray dashed;
+    border: 0.1px lightgray dashed;
 }
